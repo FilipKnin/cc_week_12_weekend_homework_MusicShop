@@ -21,4 +21,8 @@ public class Shop {
     public ArrayList<ISell> getStock() {
         return this.stock;
     }
+
+    public int countStockItems() {
+        return this.stock.size();
+    }
 }
