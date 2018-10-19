@@ -35,4 +35,16 @@ public class Shop {
         int removedItemIndex = this.stock.indexOf(item);
         this.stock.remove(removedItemIndex);
     }
+
+    public double calculateProfit() {
+        double profit = 0;
+
+        for (int i = 0; i <this.stock.size() ; i++) {
+           ISell stockItem = this.stock.get(i);
+           double markup = stockItem.calculateMarkup();
+           profit += markup;
+        }
+
+        return profit;
+    }
 }
