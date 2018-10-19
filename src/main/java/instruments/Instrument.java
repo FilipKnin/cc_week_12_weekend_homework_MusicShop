@@ -1,6 +1,8 @@
 package instruments;
 
-public abstract class Instrument {
+import interfaces.IPlay;
+
+public abstract class Instrument implements IPlay {
 
     private String brand;
     private String model;

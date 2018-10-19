@@ -12,4 +12,9 @@ public class Piano extends Instrument {
     public String getColour() {
         return this.colour;
     }
+
+    @Override
+    public String playInstrument() {
+        return "Tururururu";
+    }
 }

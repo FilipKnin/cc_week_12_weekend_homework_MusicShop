@@ -55,4 +55,9 @@ public class PianoTest {
         piano.setSellingPrice(3000.00);
         assertEquals(3000.00, piano.getSellingPrice(),0.01);
     }
+
+    @Test
+    public void canBePlayed() {
+        assertEquals("Tururururu", piano.playInstrument());
+    }
 }

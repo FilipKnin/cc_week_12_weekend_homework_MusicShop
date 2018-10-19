@@ -13,4 +13,9 @@ public class Guitar extends Instrument {
     public int getNumOfStrings() {
         return this.numOfStrings;
     }
+
+    @Override
+    public String playInstrument() {
+        return "Ty ty ry ty ty ty ty";
+    }
 }
