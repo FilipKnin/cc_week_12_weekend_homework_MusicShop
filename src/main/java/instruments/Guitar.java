@@ -1,6 +1,8 @@
 package instruments;
 
-public class Guitar extends Instrument {
+import interfaces.ISell;
+
+public class Guitar extends Instrument implements ISell {
 
     private int numOfStrings;
 
@@ -18,4 +20,10 @@ public class Guitar extends Instrument {
     public String playInstrument() {
         return "Ty ty ry ty ty ty ty";
     }
+
+    @Override
+    public double calculateMarkup() {
+            return getSellingPrice() - getBuyingPrice();
+        }
+
 }

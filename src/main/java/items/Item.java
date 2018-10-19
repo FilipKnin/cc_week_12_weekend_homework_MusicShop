@@ -1,6 +1,8 @@
 package items;
 
-public abstract class Item {
+import interfaces.ISell;
+
+public abstract class Item implements ISell {
 
     private String type;
     private String  brand;
