@@ -39,4 +39,21 @@ public class GuitarTest {
         assertEquals(1000.00, guitar.getBuyingPrice(),0.01);
     }
 
+    @Test
+    public void canSetBuyingPrice() {
+        guitar.setBuyingPrice(1500.00);
+        assertEquals(1500.00, guitar.getBuyingPrice(),0.01);
+    }
+
+    @Test
+    public void hasSellingPrice() {
+        assertEquals(2000., guitar.getSellingPrice(),0.01);
+    }
+
+    @Test
+    public void canSetSellingPrice() {
+        guitar.setSellingPrice(3000.00);
+        assertEquals(3000.00, guitar.getSellingPrice(),0.01);
+    }
+
 }
