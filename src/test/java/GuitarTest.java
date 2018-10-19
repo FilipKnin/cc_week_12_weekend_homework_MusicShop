@@ -19,4 +19,24 @@ public class GuitarTest {
         assertEquals("Brand", guitar.getBrand());
     }
 
+    @Test
+    public void hasModel() {
+        assertEquals("Model", guitar.getModel());
+    }
+
+    @Test
+    public void hasType() {
+        assertEquals(InstrumentType.Strings, guitar.getType());
+    }
+
+    @Test
+    public void hasNumOfStrings() {
+        assertEquals(10, guitar.getNumOfStrings());
+    }
+
+    @Test
+    public void hasBuyingPrice() {
+        assertEquals(1000.00, guitar.getBuyingPrice(),0.01);
+    }
+
 }

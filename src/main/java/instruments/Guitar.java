@@ -9,4 +9,8 @@ public class Guitar extends Instrument {
         super(brand, model, type, buyingPrice, sellingPrice);
         this.numOfStrings = numOfStrings;
     }
+
+    public int getNumOfStrings() {
+        return this.numOfStrings;
+    }
 }
